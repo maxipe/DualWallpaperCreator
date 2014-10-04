@@ -17,3 +17,8 @@ TODO:
 + Allow custom save name.
 + Automatically set wallpaper.
 	- eg: gsettings set org.gnome.desktop.background picture-uri 'file:///home/user/Documents/Pictures/example.jpg'
+
+
+Images from [unsplash.com](https://unsplash.com/)
++ [1.jpg](https://unsplash.imgix.net/25/puppy-love.jpg?q=75&fm=jpg&auto=format&s=65ca085acad5e1c245247ccd1530b1c6) 
++ [2.jpg](https://unsplash.imgix.net/26/cactus.jpg?q=75&fm=jpg&auto=format&s=cd5180f8c09880521d4b17e1c8eeb536)
