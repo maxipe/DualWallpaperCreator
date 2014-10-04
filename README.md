@@ -5,8 +5,10 @@ Creates a new image out of other two concatenating them so it can be used as a w
 
 ##### Usage:
 Run on console: 
-```python WallpaperCreator.py
 ```
+python WallpaperCreator.py
+```
+
 The images should be called 1.jpg and 2.jpg.
 
 ##### TODO:
