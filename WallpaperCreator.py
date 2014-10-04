@@ -41,7 +41,7 @@ if __name__ == "__main__":
 
 	wallpaperSize = getWallpaperSize(firstResolution, secondResolution)
 
-	newImage = Image.new('RGB', wallpaperSize,(123,123,123))
+	newImage = Image.new('RGB', wallpaperSize)
 	
 	"""
 	firstImagePixels = firstImage.load()
@@ -52,7 +52,7 @@ if __name__ == "__main__":
 	copy(newImagePixels, firstImage)
 	copy(newImagePixels, secondImage, firstResolution[0], verticalOffset)
 	
-	newImage.save("prueba.jpg")
+	newImage.save("wallpaper.jpg")
 else:
 	pass
 	#ToDo
