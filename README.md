@@ -3,7 +3,13 @@
 
 Creates a new image out of other two concatenating them so it can be used as a wallpaper for two screens.
 
-TODO:
+##### Usage:
+Run on console: 
+```python WallpaperCreator.py
+```
+The images should be called 1.jpg and 2.jpg.
+
+##### TODO:
 + Interactive menu.
 + Look for files.
 + Custom size for screen.
