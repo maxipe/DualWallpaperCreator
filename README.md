@@ -9,9 +9,9 @@ Run on console:
 python WallpaperCreator.py
 ```
 
-The images should be called 1.jpg and 2.jpg by default, or could be send by running:
+The images should be called 1.jpg and 2.jpg by default, or could be selected by running:
 ```
-python WallpaperCreator.py
+python WallpaperCreator.py firstImage.jpg secondImage.jpg
 ```
 
 
