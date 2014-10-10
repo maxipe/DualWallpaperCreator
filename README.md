@@ -9,7 +9,11 @@ Run on console:
 python WallpaperCreator.py
 ```
 
-The images should be called 1.jpg and 2.jpg.
+The images should be called 1.jpg and 2.jpg by default, or could be send by running:
+```
+python WallpaperCreator.py
+```
+
 
 ##### TODO:
 + Interactive menu.
