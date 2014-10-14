@@ -8,7 +8,7 @@ def getWallpaperSize(firstResolution, secondResolution, verticalOffset = 0):
 	""" First and Second resolutions should be tuples
 	with width and height. """
 	return (firstResolution[0] + secondResolution[0],
-		max(firstResolution[1],secondResolution[1]) + verticalOffset)
+		max(firstResolution[1],secondResolution[1] + verticalOffset) )
 
 def copy(destPixels, source, xOffset = 0, yOffset = 0):
 	"""Source should fit in dest.
