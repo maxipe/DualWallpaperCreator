@@ -10,23 +10,6 @@ def getWallpaperSize(firstResolution, secondResolution, verticalOffset = 0):
 	return (firstResolution[0] + secondResolution[0],
 		max(firstResolution[1],secondResolution[1]) + verticalOffset)
 
-def copy(destPixels, source, xOffset = 0, yOffset = 0):
-	"""Source should fit in dest.
-	Dest is a loaded image ( image.load() )
-	Source is just an open image (image.open() )
-	xOffset is N pixels from left side.
-	yOffset is N pixels from top. """
-
-	width, height = source.size
-
-	sourcePixels = source.load()
-	for x in xrange(width):
-		for y in xrange(height):
-			try:
-				destPixels[x + xOffset, y + yOffset] = sourcePixels[x,y]
-			except:
-				pass
-
 def openImage(imagePath):
 	try:
 		return Image.open(imagePath)
@@ -56,11 +39,10 @@ def createWallpaper(firstImagePath, secondImagePath, saveName, firstResolution, 
 	firstImagePixels = firstImage.load()
 	secondImagePixels = secondImage.load()
 	"""
-	newImagePixels = newImage.load()
 
-	copy(newImagePixels, firstImage)
-	copy(newImagePixels, secondImage, firstResolution[0], verticalOffset)
-	
+	newImage.paste(firstImage,(0,0))
+	newImage.paste(secondImage,(firstResolution[0],verticalOffset))
+		
 	newImage.save(saveName)
 
 def main(arguments):
